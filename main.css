@@ -1,0 +1,179 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(assets/wallpaper.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* === CARD POSITION AND SIZE === */
+
+.profile-card {
+  width: 42.5rem;
+  height: 23.75rem;
+  background-color: hsla(0, 0%, 100%, .5);
+  background-size: cover;
+  border-radius: 5%;
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+  font-family: Georgia;
+  color: rgba(0,0,0,.8);  
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        width: 21.25rem;
+        height: 11.875rem;
+        position: fixed;
+        top: 2.25rem;
+    }
+}
+
+/* === HEAD PART (OR LEFT PART) IMG & NAME etc === */
+
+.head {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+.profile-image {
+  margin-left: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%; 
+  padding: 0.0625rem;
+  background-color: #666;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(40%);
+}
+
+img:hover {
+  transform: scale(1.1);
+  filter: grayscale(20%);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.625rem; 
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 0.5625rem; 
+    }
+}
+
+h2 {
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 0.5rem;
+        margin-top: 0.3125rem;
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* === CONTENT PART (OR RIGHT PART) HEADLINE @ ICONS etc === */
+
+.content {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  float: right;
+  padding: 5% 3%;
+}
+
+@media (max-width: 768px) {
+    .content {
+       padding: 2% 3%;
+    }
+}
+
+.name-headline {
+   text-align: center;
+   margin-left: 10%;
+}
+  
+em {
+  font-weight: bold;
+  color: #696969;
+}
+
+em:hover {
+  color: blue;
+}
+
+i {
+ color: rgba(38, 23, 27, 0.9);
+}
+
+i:hover {
+  color: rgba(99, 140, 190, 1);
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 7%;
+  margin-left: 15%;
+}
+
+@media (max-width: 768px) {
+    ul {
+        margin-top: 4%;
+    }
+}
+
+li {
+  display: inline-block;
+  width: 28%;
+}
+
+@media (max-width: 768px) {
+    li {
+        font-size: 0.5rem;
+    }
+}
+
+.abaout {
+  letter-spacing: 0.125rem;
+  line-height: 1.5rem;
+  margin-top: 3%;
+  text-justify: inter-character;
+}
+
+@media (max-width: 768px) {
+    .abaout {
+        line-height: 0.75rem;
+        margin-top: 0.625rem;
+        font-size: 0.5rem;
+    }
+}
+
+/* Mobile és Tablet */
+@media (max-width: 768px) {
+    p {
+        font-size: 0.375rem;
+    }
+}
